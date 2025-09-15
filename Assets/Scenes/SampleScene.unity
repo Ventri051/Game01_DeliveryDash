@@ -241,7 +241,7 @@ Transform:
   m_GameObject: {fileID: 31148898}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.45, y: -1.69, z: 0}
+  m_LocalPosition: {x: -2, y: 0.08, z: 0}
   m_LocalScale: {x: 2.4637, y: 2.4637, z: 2.4637}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -355,7 +355,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.3509434, g: 0.2940324, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -509,6 +509,7 @@ GameObject:
   - component: {fileID: 636107511}
   - component: {fileID: 636107510}
   - component: {fileID: 636107512}
+  - component: {fileID: 636107513}
   m_Layer: 0
   m_Name: Eatty McDash
   m_TagString: Untagged
@@ -583,7 +584,7 @@ Transform:
   m_GameObject: {fileID: 636107506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: -1.6, z: 0}
+  m_LocalPosition: {x: 4.3, y: -0.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -713,6 +714,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.3148861}
   m_EdgeRadius: 0
+--- !u!114 &636107513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636107506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5df456c2d0b19448c5aeb796dc328c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collision
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
