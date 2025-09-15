@@ -425,7 +425,7 @@ Transform:
   m_GameObject: {fileID: 636107506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.12, y: -1.87, z: 0}
+  m_LocalPosition: {x: 3.5, y: -1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -443,8 +443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c5689dcfb5625479f77db1275da43f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Driver
-  steerSpeed: 0.5
-  moveSpeed: 0.05
+  steerSpeed: 100
+  moveSpeed: 3
 --- !u!1 &1886146197
 GameObject:
   m_ObjectHideFlags: 0
