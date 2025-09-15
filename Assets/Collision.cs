@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Collision : MonoBehaviour
@@ -6,4 +7,12 @@ public class Collision : MonoBehaviour
     {
         Debug.Log("Ouch!");
     }
+
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("What the sigma");
+    }
+
 }
+
