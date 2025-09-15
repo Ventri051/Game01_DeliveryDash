@@ -224,7 +224,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 636107507}
   - component: {fileID: 636107509}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Eatty McDash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -443,6 +443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c5689dcfb5625479f77db1275da43f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Driver
+  steerSpeed: 0.5
+  moveSpeed: 0.05
 --- !u!1 &1886146197
 GameObject:
   m_ObjectHideFlags: 0
