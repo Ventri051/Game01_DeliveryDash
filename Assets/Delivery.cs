@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Delivery : MonoBehaviour
 {
-
+    bool hasPackage;
 
 
 
@@ -17,9 +17,10 @@ public class Delivery : MonoBehaviour
 
 
 
-        if (collision.CompareTag("Customer"))
+        if (collision.CompareTag("Customer") && hasPackage)
         {
-             Debug.Log("delivered package");
+            Debug.Log("delivered package");
+            hasPackage = false;
         }
 
            
