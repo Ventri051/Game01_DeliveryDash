@@ -1,12 +1,29 @@
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Driver : MonoBehaviour
 {
-    [SerializeField] float steerSpeed = .5f;
-    [SerializeField] float moveSpeed = .1f;
-    
-     void Update()
+    [SerializeField] float steerSpeed = 5f;
+    [SerializeField] float currentSpeed = .1f;
+    [SerializeField] float boostSpeed = 10f;
+    [SerializeField] float regSpeed = 5f;
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Boost"))
+        {
+            currentSpeed = boostSpeed;
+            Destroy(collision.gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        currentSpeed = regSpeed;
+    }
+
+    void Update()
     {
         float move = 0f;
         float steer = 0f;
@@ -28,7 +45,7 @@ public class Driver : MonoBehaviour
             steer = -1f;
         }
 
-        float moveAmount = moveSpeed * move * Time.deltaTime;
+        float moveAmount = currentSpeed * move * Time.deltaTime;
         float steerAmount = steer * steerSpeed * Time.deltaTime;
        
         transform.Rotate(0, 0, steerAmount);
