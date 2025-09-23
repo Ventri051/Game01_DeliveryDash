@@ -15,6 +15,7 @@ public class Delivery : MonoBehaviour
         if (collision.CompareTag("Package") && !hasPackage)
         {
             Debug.Log("picked up package");
+            GetComponent<ParticleSystem>().Play();
             Destroy(collision.gameObject, delay);
         }
 
@@ -24,6 +25,7 @@ public class Delivery : MonoBehaviour
         {
             Debug.Log("delivered package");
             hasPackage = false;
+            GetComponent<ParticleSystem>().Stop();
         }
 
            
